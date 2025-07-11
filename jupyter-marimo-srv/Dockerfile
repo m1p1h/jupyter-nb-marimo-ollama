@@ -17,6 +17,8 @@ RUN pip install .
 
 RUN jupyter server extension enable --py jupyter_server_proxy --sys-prefix
 
+RUN pip install elyra
 
+RUN jupyter server extension enable elyra
 
 
