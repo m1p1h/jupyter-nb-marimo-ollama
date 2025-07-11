@@ -46,10 +46,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "9999:8888"
-    depends_on:
-      - ollama
-    environment:
-      - OLLAMA_HOST=http://ollama:11434
 
 networks:
   ollama-docker:
